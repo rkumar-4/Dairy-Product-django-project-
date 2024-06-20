@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Home{% endblock title %}
+
+{% block banner_slider %}
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="{% static 'image/banner/b1.jpg' %}" class="d-block w-100" alt="banner1">
+      </div>
+      
+      <div class="carousel-item">
+        <img src="{% static 'image/banner/b2.jpg' %}" class="d-block w-100" alt="banner2">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'image/banner/b3.jpg' %}" class="d-block w-100" alt="banner3">
+      </div>
+
+      <div class="carousel-item">
+        <img src="{% static 'image/banner/b4.jpg' %}" class="d-block w-100" alt="banner4">
+      </div>
+
+    </div>
+  </div>
+
+
+{% endblock banner_slider %}
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">About Us</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">Welcome to Dairy Product, your premier destination for high-quality dairy products made with care and passion. At Dairy Product, we're committed to providing you with delicious and nutritious dairy products that you and your family will love.</p>
+    </div>
+    <br><br>
+    <h2 class="text-center">Our Mission</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">At Dairy Product, our mission is to deliver the finest dairy products while upholding the highest standards of quality, integrity, and sustainability. We believe in the power of dairy to nourish and delight, and we're dedicated to creating products that reflect our commitment to excellence.</p>
+        </div>
+        <br><br>
+        <h2 class="text-center">Our Products</h2>
+        <br>
+        <div class="row container">
+            <p class="fs-4 text-center">From creamy milk and velvety yogurt to artisanal cheeses and indulgent ice creams, Dairy Product offers a diverse range of dairy products to suit every taste and preference. Made with the freshest ingredients and crafted with care, our products are a testament to our passion for dairy.</p>
+        </div>
+    </div>
+    <br><br>
+{% endblock main-content %}
